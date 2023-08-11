@@ -1,11 +1,11 @@
-package tests;
+package test.tests;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
-import pages.FormPage;
+import test.pages.FormPage;
 
 import java.util.concurrent.TimeUnit;
 
@@ -26,8 +26,8 @@ public class BaseTest {
         formPage = new FormPage(driver);
 
     }
-    @AfterMethod(alwaysRun = true)
-    public void tearDown(){
-        driver.quit();
-    }
+//    @AfterMethod(alwaysRun = true)
+//    public void tearDown(){
+//        driver.quit();
+//    }
 }
