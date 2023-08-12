@@ -16,8 +16,6 @@ public class FormTest extends BaseTest{
         formPage.create();
         formPage.submitForm();
 
-        System.out.println("!");
-
     }
 
 }

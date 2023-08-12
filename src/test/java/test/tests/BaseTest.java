@@ -19,7 +19,7 @@ public class BaseTest {
 
         WebDriverManager.chromedriver().setup();
         driver = new ChromeDriver();
-        driver.manage().window().maximize();
+        driver.manage().window().fullscreen();
         driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 
 
