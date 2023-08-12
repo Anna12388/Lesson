@@ -14,6 +14,9 @@ public class FormTest extends BaseTest{
         assertTrue(formPage.isPageOpen());
 
         formPage.create();
+        formPage.submitForm();
+
+        System.out.println("!");
 
     }
 

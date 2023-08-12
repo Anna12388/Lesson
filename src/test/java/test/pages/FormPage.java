@@ -19,9 +19,14 @@ public class FormPage extends BasePage{
     }
     public void create(){
         new Input(driver, "firstName").write("testName");
+        new Input(driver, "lastName").write("testLastName");
+        new Input(driver, "userNumber").write("1111111111");
         new Radiobutton(driver, "Male").selectRadiobutton();
         new Calendar(driver).selectDate("May","2020","10");
 
+    }
+    public void submitForm(){
+        driver.findElement(By.id("firstName")).sendKeys("\n");
     }
 
     @Override
